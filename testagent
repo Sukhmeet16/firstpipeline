@@ -1,0 +1,13 @@
+
+# 'trigger' defines which branch will trigger the pipeline automatically.
+trigger:
+  - main  
+
+# 'pool' specifies the agent (virtual machine) where the pipeline will run.
+pool:
+  vmImage: ubuntu-latest  
+
+# 'steps' define the tasks the pipeline will execute.
+steps:
+  - script: echo "Hello World from Azure DevOps!" 
+    displayName: 'Print Hello World'  
