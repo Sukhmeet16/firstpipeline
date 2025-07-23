@@ -14,6 +14,16 @@ steps:
     echo "Verifying registered Python versions..."
     dir "$(Agent.ToolsDirectory)/Python"
   displayName: "Check tool cache"
+- script: |
+        echo " Agent tool cache directory:"
+        echo "$(Agent.ToolsDirectory)"
+        echo ""
+
+        echo " Listing Python versions:"
+        dir "$(Agent.ToolsDirectory)\Python"
+
+        echo ""
+
 
 
 
