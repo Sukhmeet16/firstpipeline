@@ -26,9 +26,9 @@ steps:
         
         echo " Checking for Python 3.13.5 (x64):"
         if exist "$(Agent.ToolsDirectory)\Python\3.13.5\x64\x64.complete" (
-          echo "Python 3.13.0 is registered correctly with x64.complete marker."
+          echo "Python 3.13.5 is registered correctly with x64.complete marker."
         ) else (
-          echo " Python 3.13.0 is missing or incomplete."
+          echo " Python 3.13.5 is missing or incomplete."
           exit 
         )
 
